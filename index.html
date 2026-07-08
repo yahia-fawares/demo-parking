@@ -712,14 +712,24 @@
       }
 
       .step {
-        padding-top: 18px;
-        padding-left: 72px;
-        min-height: 96px;
+        display: grid;
+        grid-template-columns: 42px minmax(0, 1fr);
+        column-gap: 14px;
+        align-items: start;
+        padding: 18px;
+        min-height: 0;
       }
 
       .step::before {
-        top: 18px;
-        left: 18px;
+        position: static;
+        grid-row: 1 / span 2;
+        width: 38px;
+        height: 38px;
+      }
+
+      .step h3,
+      .step p {
+        grid-column: 2;
       }
 
       .asset-actions .btn {
