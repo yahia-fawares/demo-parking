@@ -1,3 +1,3 @@
 # Demo Parking
 
-Public MallParking landing page package.
+Public E-Parking landing page package.
