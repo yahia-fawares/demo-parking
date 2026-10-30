@@ -777,7 +777,14 @@
     .nav-links a:hover {color:#008e80}
     .hero h1 {letter-spacing:-.045em}
     .pilot {background:linear-gradient(135deg,#e8f8f2,#fff)}
-    .use-cases{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.use-cases span{border:1px solid #dbe6f2;border-radius:999px;background:#fff;padding:9px 15px;font-size:14px;font-weight:750;color:#0b3750}.stage-note{font-size:13px;color:#a9d5d1;margin-top:18px} </style>
+    .use-cases{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.use-cases span{border:1px solid #dbe6f2;border-radius:999px;background:#fff;padding:9px 15px;font-size:14px;font-weight:750;color:#0b3750}.stage-note{font-size:13px;color:#a9d5d1;margin-top:18px} 
+/* Parking status colors: accessible, consistent across dashboard previews */
+.status-pill.status-available { background:#dcfce7; color:#166534; border:1px solid #86efac; }
+.status-pill.status-occupied { background:#fee2e2; color:#991b1b; border:1px solid #fca5a5; }
+.status-pill.status-pending { background:#ffedd5; color:#9a3412; border:1px solid #fdba74; }
+.status-pill.status-out-of-service { background:#e2e8f0; color:#334155; border:1px solid #cbd5e1; }
+.status-pill.status-reserved { background:#ede9fe; color:#5b21b6; border:1px solid #c4b5fd; }
+</style>
 <meta property="og:title" content="E-Parking | Smart Parking for Modern Destinations"><meta property="og:description" content="Jordanian-developed smart parking MVP. Exploring pilot collaborations across Jordan and the GCC."><meta name="description" content="E-Parking is a Jordanian-developed smart parking MVP for residential, commercial, retail and mixed-use properties. Explore a pilot collaboration."></head>
 <body>
   <header class="nav">
@@ -833,7 +840,7 @@
                     <strong>C-A-003</strong><br>
                     <small>City Parking - Ground Floor - Zone A</small>
                   </div>
-                  <span class="status-pill">Available</span>
+                  <span class="status-pill status-available">Available</span>
                 </div>
                 <div class="slot-row">
                   <div class="slot-icon">B2</div>
@@ -841,7 +848,7 @@
                     <strong>C-A-005</strong><br>
                     <small>City Parking - Ground Floor - Zone A</small>
                   </div>
-                  <span class="status-pill">Reserved</span>
+                  <span class="status-pill status-reserved">Reserved</span>
                 </div>
                 <div class="slot-row">
                   <div class="slot-icon">QR</div>
@@ -974,10 +981,10 @@
           </div>
           <div class="panel">
             <div class="product-grid">
-              <div class="product-card"><strong>C-A-001</strong><span class="status-pill">Available</span><div class="mini-bars"><span style="--w:74%"></span><span style="--w:46%"></span></div></div>
-              <div class="product-card"><strong>C-A-002</strong><span class="status-pill">Occupied</span><div class="mini-bars"><span style="--w:62%"></span><span style="--w:80%"></span></div></div>
-              <div class="product-card"><strong>C-A-003</strong><span class="status-pill">Pending</span><div class="mini-bars"><span style="--w:55%"></span><span style="--w:35%"></span></div></div>
-              <div class="product-card"><strong>C-A-004</strong><span class="status-pill">Out of Service</span><div class="mini-bars"><span style="--w:30%"></span><span style="--w:60%"></span></div></div>
+              <div class="product-card"><strong>C-A-001</strong><span class="status-pill status-available">Available</span><div class="mini-bars"><span style="--w:74%"></span><span style="--w:46%"></span></div></div>
+              <div class="product-card"><strong>C-A-002</strong><span class="status-pill status-occupied">Occupied</span><div class="mini-bars"><span style="--w:62%"></span><span style="--w:80%"></span></div></div>
+              <div class="product-card"><strong>C-A-003</strong><span class="status-pill status-pending">Pending</span><div class="mini-bars"><span style="--w:55%"></span><span style="--w:35%"></span></div></div>
+              <div class="product-card"><strong>C-A-004</strong><span class="status-pill status-out-of-service">Out of Service</span><div class="mini-bars"><span style="--w:30%"></span><span style="--w:60%"></span></div></div>
             </div>
           </div>
         </div>
